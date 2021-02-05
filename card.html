@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It's ur Birthday</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Satisfy&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: 'Quicksand', sans-serif;
+			overflow-y: scroll;
+			background-image: url(bdb.gif);
+		}
+		.container{
+			max-width: 1000px;
+			margin: 100px auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around; 
+		}
+		.card{
+			position: relative;
+			margin: 20px 0;
+			width: 300px;
+			height: 400px;
+			background: #fff;
+			transform-style: preserve-3d;
+			transform: perspective(2000px);
+			transition: 1s;
+			box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
+		}
+		.card:hover{
+			z-index: 1000;
+			transform: perspective(2000px) rotate(-10deg);
+			box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+		}
+		.card .imgBox{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: 1px solid #000;
+			box-sizing: border-box;
+			transform-origin: left;
+			z-index: 1;
+			transition: 1s;
+		}
+		.card:hover .imgBox{
+			transform: rotateY(-135deg);
+		}
+		.card .imgBox .img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.card .details{
+			position: absolute;
+			top: 0;
+			left: 0;
+			box-sizing: border-box;
+			padding: 20px;
+		}
+		body::-webkit-scrollbar {
+		    display: none;
+		}
+		body {
+		  -ms-overflow-style: none;
+		  scrollbar-width: none;
+		}
+		h2{text-align: center;font-size: 30px}
+		p{
+			font-family: 'Bad Script', cursive;
+			font-size: 15px;
+		}
+		.n{
+			text-align: right;
+			font-size: 30px;
+			font-family: 'Rouge Script', cursive;
+		}
+	</style>
+</head>
+<body bgcolor="black">
+	<div class="container">
+		<div class="card">
+			<div class="imgBox">
+				<img class="img" src="1.jpg">
+			</div>
+			<div class="details">
+				<h2>Happy Birthday</h2>
+				<p>"Happy birthday! I hope all your birthday wishes and dreams come true."<br><br>"A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always"<br><br>Happy birthday! 🎁🎁</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBox">
+				<img class="img" src="2.jpg">
+			</div>
+			<div class="details">
+				<h2>Happy Birthday</h2>
+				<p>
+					"You are not only strong and wise, but kind and thoughtful as well.”<br><br> Your birthday is the perfect opportunity to show you how grateful I am to have you my friend.<br><br>Happy birthday! 🎁🎁
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBox">
+				<img class="img" src="5.jpg">
+			</div>
+			<div class="details">
+				<h2>Happy Birthday</h2>
+				<p>
+					“Today is the birthday of a girl who is spreading joy and positivity all around.<br><br>May your birthday and your life be as wonderful as you are!"
+					<br><br>Happy birthday! 🎁🎁
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBox">
+				<img class="img" src="10.jpg">
+			</div>
+			<div class="details">
+				<h2>Happy Birthday</h2>
+				<p>
+					“On your birthday, I thought of giving you the cutest gift in the world. <br><br>But then I realized that is not possible, <br>because you yourself are the cutest gift in the world."<br><br>Happy birthday! cuttie 🎁🎁
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBox">
+				<img class="img" src="9.jpg">
+			</div>
+			<div class="details">
+				<h2>Happy Birthday</h2>
+				<p>
+					“Life का हर Goal रहे आपका Clear,<br><br>
+					आप Success पाओ Without any Fear,<br><br>
+					हर पल जियो Without any Tear,<br><br>
+					Enjoy your day my Dear 😂"<br><br>
+					🎂	Happy Birthday! 🎂
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBox">
+				<img class="img" src="6.jpg">
+			</div>
+			<div class="details">
+				<u><h2>My Success Story</h2></u>
+				<p style="height: 90px;padding: 30%;opacity: .4">
+					Write your success story here
+					<div class="n">Nisha</div>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
